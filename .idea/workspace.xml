@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f78eecc5-5051-4510-8390-fcc3408801f6" name="Changes" comment="Создал сайт">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760548796685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Создал сайт">
+      <option name="closed" value="true" />
+      <created>1760550062211</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760550062211</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Создал сайт">
+      <option name="closed" value="true" />
+      <created>1760550809130</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760550809130</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
