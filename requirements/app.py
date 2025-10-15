@@ -12,3 +12,6 @@ def home():
 def kartochka():
     return render_template('kartochka.html')
 
+if __name__ == 'main':
+  app.run(debug=True)
+
