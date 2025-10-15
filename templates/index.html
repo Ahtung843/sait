@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Главная страница</title>
+  <style>
+    :root {
+      --bg-color: #0e0e0e;
+      --card-bg: #1a1a1a;
+      --text-color: #e0e0e0;
+      --accent: #ff005c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: #141414;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2rem;
+      font-weight: bold;
+      flex-shrink: 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+      letter-spacing: 1px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    a.card {
+      text-decoration: none;
+      color: inherit;
+      width: 260px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    a.card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.8);
+      background: #222;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background-color: #222;
+    }
+
+    .card-description {
+      padding: 14px;
+      font-size: 1rem;
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      padding: 20px 0;
+      background: #141414;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* ======== АДАПТИВ ======== */
+    @media (max-width: 1024px) {
+      main {
+        gap: 16px;
+        padding: 20px 15px;
+      }
+      a.card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.6rem;
+        padding: 16px;
+      }
+
+      main {
+        justify-content: center;
+      }
+
+      a.card {
+        width: 90%;
+        max-width: 400px;
+      }
+
+      .card img {
+        height: 220px;
+      }
+
+      .card-description {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        font-size: 1.3rem;
+      }
+
+      a.card {
+        width: 100%;
+      }
+
+      .card img {
+        height: 200px;
+      }
+
+      .card-description {
+        font-size: 0.95rem;
+        padding: 12px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Эскорт Инзера</header>
+
+  <main>
+    <a href="{{ url_for('kartochka') }}" class="card">
+      <img src="{{ url_for('static', filename='images/photo_2025-10-15_19-23-00.jpg') }}" alt="Фото 1" />
+      <div class="card-description">нээ</div>
+    </a>
+  </main>
+
+  <footer>
+    © 2025 — Эскорт Инзера
+  </footer>
+</body>
+</html>
